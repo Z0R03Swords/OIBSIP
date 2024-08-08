@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece - Luffy</title>
+    <link rel="stylesheet" href="tribute.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#section1">Luffy's Dream</a></li>
+                <li><a href="#section2">Luffy's Crew</a></li>
+                <li><a href="#section3">Luffy's Powers</a></li>
+                <li><a href="#section4">Luffy's Adventures</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to the World of Luffy</h1>
+        <p>Explore the adventures of Monkey D. Luffy, the aspiring Pirate King!</p>
+    </section>
+    <section id="section1">
+        <div class="content">
+            <img src="assets/wallpaperflare.com_wallpaper (21).jpg" alt="Luffy Dream">
+            <div class="text">
+                <h2>Luffy's Dream</h2>
+                <p>Monkey D. Luffy dreams of becoming the Pirate King by finding the legendary treasure, One Piece.</p>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="crewN">
+        <h2>Luffy's Crew</h2>
+        <p>Luffy leads the Straw Hat Pirates, a diverse and loyal crew each with unique abilities and dreams.</p>
+    </div>
+        <div class="crew">
+            <div class="crew-member" data-name="Zoro" data-description="Roronoa Zoro is a swordsman who aims to become the world's greatest swordsman.">
+                <img src="assets/zoro.jpg" alt="Zoro">
+            </div>
+            <div class="crew-member" data-name="Nami" data-description="Nami is the crew's navigator with a dream to create a complete map of the world.">
+                <img src="assets/nami.jpg" alt="Nami">
+            </div>
+            <div class="crew-member" data-name="Ussop" data-description="Usopp is the sharpshooter and storyteller of the crew with a dream of becoming a brave warrior of the sea.">
+                <img src="assets/Ussop.jpeg" alt="Ussop">
+            </div>
+            <div class="crew-member" data-name="Sanji" data-description="Sanji is the crew's cook who dreams of finding the All Blue, a legendary sea with fish from all over the world.">
+                <img src="assets/sanji.jpeg" alt="Sanji">
+            </div>
+            <div class="crew-member" data-name="Chopper" data-description="Tony Tony Chopper is a reindeer who ate the Human-Human Fruit and wants to be a great doctor.">
+                <img src="assets/chopper.jpg" alt="Chopper">
+            </div>
+            <div class="crew-member" data-name="Robin" data-description="Nico Robin is an archaeologist who seeks to uncover the true history of the world.">
+                <img src="assets/robin.jpg" alt="Robin">
+            </div>
+            <div class="crew-member" data-name="Franky" data-description="Franky is a cyborg shipwright who wants to build and sail a ship that can reach the end of the world.">
+                <img src="assets/franky.jpg" alt="Franky">
+            </div>
+            <div class="crew-member" data-name="Brook" data-description="Brook is a musician and swordsman who has the power of the Revive-Revive Fruit, allowing him to come back to life.">
+                <img src="assets/brook.jpeg" alt="Brook">
+            </div>
+            <div class="crew-member" data-name="Jinbe" data-description="Jinbe is a fish-man and skilled martial artist who dreams of promoting peace between humans and fish-men.">
+                <img src="assets/jeimbei.jpeg" alt="Jinbe">
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="content">
+            <img src="assets/luffypower.webp" alt="Luffy Dream">
+            <div class="text">
+                <h2>Luffy's Powers</h2>
+                <p>Thanks to the Gum-Gum Fruit, Luffy has the ability to stretch his body like rubber.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="content">
+            <img src="assets/east.webp" alt="">
+            <div class="comb">
+                <h2>Luffy's Adventures</h2>
+                <p>From East Blue to the Grand Line, Luffy's adventures are filled with excitement and danger.</p>
+            </div>
+            <img src="assets/aftereast.png" alt="Luffy Adventures">
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="gallery-content">
+            <h2>Gallery</h2>
+            <p>Check out some iconic moments of Luffy and his crew.</p>
+            <video class="gallery-video" src="assets/vid.mp4" autoplay muted loop></video>
+        </div>
+    </section>
+    
+    <!-- Modal for enlarged crew member images -->
+    <div id="modal" class="modal">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-img" class="modal-img" src="" alt="">
+        <div id="modal-text" class="modal-text"></div>
+    </div>
+
+    <script src="tribute.js"></script>
+</body>
+</html>
