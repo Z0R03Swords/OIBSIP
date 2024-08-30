@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="authentication.css">
+</head>
+
+<body>
+    <div id="auth-container">
+        <div id="login-form" class="form">
+            <h2>Login</h2>
+            <input type="text" id="login-identifier" placeholder="Email ID or Mobile No." required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
+        </div>
+        <div id="register-form" class="form" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="tel" id="register-mobile" placeholder="Mobile No." required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button onclick="register()">Register</button>
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+    </div>
+    <div id="welcome-page" style="display: none;">
+        <div class="welcome-container">
+            <h2 id="welcome-username">Welcome to Your Dashboard!</h2>
+            <p>This is your personal space.</p>
+
+            <div id="todo-app">
+                <h3>Your To-Do List</h3>
+                <input type="text" id="new-todo" placeholder="Add a new task" />
+                <button onclick="addTodo()">Add</button>
+                <ul id="todo-list"></ul>
+            </div>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="authentication.js"></script>
+</body>
+
+</html>
